@@ -5,25 +5,6 @@ import { Variants } from "framer-motion";
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
-
-const transitionVariants: { item: Variants } = {
-    item: {hidden: {
-            opacity: 0,
-            filter: 'blur(12px)',
-            y: 12,
-        },
-        visible: {
-            opacity: 1,
-            filter: 'blur(0px)',
-            y: 0,
-            transition: {
-                type: 'spring' as const,
-                bounce: 0.3,
-                duration: 1.5,
-            },
-        },
-    },
-};
    
 
 
@@ -45,29 +26,16 @@ export default function HeroSection() {
                     <div className="relative pt-24 md:pt-36">
                         <AnimatedGroup
                             variants={{
-                                container: {
-                                    visible: {
-                                        transition: {
-                                            delayChildren: 1,
-                                        },
-                                    },
-                                },
-                                item: {
-                                    hidden: {
-                                        opacity: 0,
-                                        y: 20,
-                                    },
-                                    visible: {
-                                        opacity: 1,
-                                        y: 0,
-                                        transition: {
-                                            type: 'spring',
-                                            bounce: 0.3,
-                                            duration: 2,
-                                        },
-                                    },
-                                },
-                            }}
+    container: {
+      visible: {
+        transition: { type: "spring", bounce: 0.4, duration: 0.8 }
+      }
+    },
+    item: {
+      hidden: { opacity: 0, filter: "blur(4px)", y: 20 },
+      visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }
+    }
+  } as Variants}
                             className="mask-b-from-35% mask-b-to-90% absolute inset-0 top-56 -z-20 lg:top-32">
                             <Image
                                 src="https://ik.imagekit.io/lrigu76hy/tailark/night-background.jpg?updatedAt=1745733451120"
@@ -110,16 +78,17 @@ export default function HeroSection() {
 
                         <AnimatedGroup
                             variants={{
-                                container: {
-                                    visible: {
-                                        transition: {
-                                            staggerChildren: 0.05,
-                                            delayChildren: 0.75,
-                                        },
-                                    },
-                                },
-                                ...transitionVariants,
-                            }}>
+    container: {
+      visible: {
+        transition: { type: "spring", bounce: 0.4, duration: 0.8 }
+      }
+    },
+    item: {
+      hidden: { opacity: 0, filter: "blur(4px)", y: 20 },
+      visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }
+    }
+  } as Variants}
+                            >
                             <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image

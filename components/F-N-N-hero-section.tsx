@@ -5,25 +5,6 @@ import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { LogoCloud } from "@/components/ui/logo-cloud"
 import { Variants } from "framer-motion";
-const transitionVariants: { item: Variants } = {
-    item: {hidden: {
-            opacity: 0,
-            filter: 'blur(12px)',
-            y: 12,
-        },
-        visible: {
-            opacity: 1,
-            filter: 'blur(0px)',
-            y: 0,
-            transition: {
-                type: 'spring' as const,
-                bounce: 0.3,
-                duration: 1.5,
-            },
-        },
-    },
-};
-        
 
 export default function HeroSection() {
     return (
@@ -52,17 +33,18 @@ export default function HeroSection() {
                             </TextEffect>
 
                             <AnimatedGroup
-                                variants={{
-                                    container: {
-                                        visible: {
-                                            transition: {
-                                                staggerChildren: 0.05,
-                                                delayChildren: 0.75,
-                                            },
-                                        },
-                                    },
-                                    ...transitionVariants,
-                                }}
+                                 variants={{
+    container: {
+      visible: {
+        transition: { type: "spring", bounce: 0.4, duration: 0.8 }
+      }
+    },
+    item: {
+      hidden: { opacity: 0, filter: "blur(4px)", y: 20 },
+      visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }
+    }
+  } as Variants}
+  
                                 className="mt-12">
                                 <form
                                     action=""
