@@ -41,7 +41,7 @@ export default function HeroSection() {
                                 />
                                 <Image
                                     className="rounded-(--radius) hidden border shadow-xl dark:block"
-                                    src="/dark-card.webp"
+                                    src="/content-mark-dark.jpg "
                                     alt="Tailark hero section"
                                     width={2880}
                                     height={2074}
