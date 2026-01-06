@@ -1,15 +1,13 @@
-import React from 'react'
+
 import Link from 'next/link'
-import { ArrowRight, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { ChevronRight } from 'lucide-react'
+import { Variants } from "framer-motion";
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
-import type { Variants } from 'framer-motion';
 
-const transitionVariants = {
-    item: {
-        hidden: {
+const transitionVariants: { item: Variants } = {
+    item: {hidden: {
             opacity: 0,
             filter: 'blur(12px)',
             y: 12,
@@ -19,22 +17,18 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
         },
     },
-}
-const item: Variants = {
-  hidden: { opacity: 0, filter: 'blur(6px)', y: -10 },
-  visible: {
-    opacity: 1,
-    filter: 'none',
-    y: 0,
-    transition: { type: 'spring' as const, bounce: 0.4, duration: 0.8 },
-  },
 };
+   
+
+
+
+
 export default function HeroSection() {
     return (
         <>

@@ -1,13 +1,12 @@
-import React from 'react'
+
 import { Mail, SendHorizonal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { LogoCloud } from "@/components/ui/logo-cloud"
-
-const transitionVariants = {
-    item: {
-        hidden: {
+import { Variants } from "framer-motion";
+const transitionVariants: { item: Variants } = {
+    item: {hidden: {
             opacity: 0,
             filter: 'blur(12px)',
             y: 12,
@@ -17,13 +16,14 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
         },
     },
-}
+};
+        
 
 export default function HeroSection() {
     return (
