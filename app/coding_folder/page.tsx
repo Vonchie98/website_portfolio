@@ -1,15 +1,14 @@
-import Image from "next/image";
-import HeroSection from "@/components/hero-section";
-import Features from "@/components/features-12";
+import HeroSection from "@/components/coding-hero-section";
 import FAQsThree from "@/components/faqs-3";
-
-
+import ContentSection from "./content-2";
 export default function Home() {
   return (
         <main>
         <HeroSection />
-        <Features />
+        <ContentSection/>
         <FAQsThree />
         </main>
   );
 }
+
+

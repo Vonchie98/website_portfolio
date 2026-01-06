@@ -1,16 +1,17 @@
 'use client'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { ModeToggle } from '../components/ThemeToggleButton'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Coding', href: '/coding_folder' },
+    { name: 'Marketing', href: '/marketing_folder' },
+    { name: 'Statistics', href: '/Statistics_folder' },
+    { name: 'Tutoring', href: '/tutoring_folder' },
+    { name: 'Fitness and Nutrition', href: '/f-n-n_folder' },
 ]
 
 export const HeroHeader = () => {
@@ -36,7 +37,13 @@ export const HeroHeader = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <Logo />
+                                <img
+                                    src="/logo.svg"
+                                    alt="Logo"
+                                    width={170}
+                                    height={170}
+                                    
+                                />
                             </Link>
 
                             <button
@@ -82,26 +89,20 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>Login</span>
+                                    <Link href="/projects_folder">
+                                        <span>Projects</span>
                                     </Link>
                                 </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>Sign Up</span>
-                                    </Link>
-                                </Button>
+                
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="#">
-                                        <span>Get Started</span>
+                                    <Link href="/portfolio_map_folder">
+                                        <span>Portfolio Map</span>
                                     </Link>
                                 </Button>
+                                <ModeToggle />
                             </div>
                         </div>
                     </div>

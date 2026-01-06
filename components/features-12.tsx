@@ -55,7 +55,11 @@ export default function Features() {
                                     Coding
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>I offer coding tutoring services in various programming languages,
+        including Python, JavaScript, and Java. Whether you're a beginner
+        looking to learn the basics or an experienced coder seeking to enhance
+        your skills, I can provide personalized lessons and projects to help you
+        achieve your goals. And my coding skills aren't only limited to helping others learn them; I can code any project or idea that you have whether it is to build a machine learning model to help your compnay or a simple script to modify your browser experience. (place holder text).</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="Marketing">
                             <AccordionTrigger>
@@ -64,7 +68,9 @@ export default function Features() {
                                     Marketing
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>I offer services in marketing, covering areas such as market
+        research, digital marketing, social media marketing, branding, and more.
+        . (place holder text)</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="Statistics">
                             <AccordionTrigger>
@@ -73,7 +79,10 @@ export default function Features() {
                                     Statistics
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>I provide services in statistics, covering areas such as
+        descriptive statistics, inferential statistics, hypothesis testing,
+        regression analysis, and more. And when it comes to understanidng the data you won't have to lift a finger; as all my projections and numbers well come with an explantation of the findings as well as the suggested approach for that circumstance. (place
+        holder text).</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="Tutoring">
                             <AccordionTrigger>
@@ -82,7 +91,12 @@ export default function Features() {
                                     Tutoring
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>I offer personalized tutoring services in various subjects, including
+        mathematics, science, and computer science. My approach is tailored to
+        each student's learning style and pace, ensuring that they grasp the
+        concepts effectively. Whether you need help with homework, exam
+        preparation, or understanding complex topics, I'm here to assist you.
+        (place holder text).</AccordionContent>
                         </AccordionItem>
                          <AccordionItem value="Fitness_and_Nutrition">
                             <AccordionTrigger>
@@ -91,7 +105,11 @@ export default function Features() {
                                     Fitness and Nutrition
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>I can help you create personalized fitness plans and nutrition guides to
+        help you achieve your health goals. Whether you're looking to build
+        muscle, lose weight, or simply maintain a healthy lifestyle, I have the
+        knowledge and expertise to guide you every step of the way. (place
+        holder text).</AccordionContent>
                         </AccordionItem>
                     </Accordion>
 
