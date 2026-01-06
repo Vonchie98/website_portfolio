@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
-
+import type { Variants } from 'framer-motion';
 
 const transitionVariants = {
     item: {
@@ -26,7 +26,15 @@ const transitionVariants = {
         },
     },
 }
-
+const item: Variants = {
+  hidden: { opacity: 0, filter: 'blur(6px)', y: -10 },
+  visible: {
+    opacity: 1,
+    filter: 'none',
+    y: 0,
+    transition: { type: 'spring' as const, bounce: 0.4, duration: 0.8 },
+  },
+};
 export default function HeroSection() {
     return (
         <>
