@@ -8,8 +8,8 @@ export default function under_construction(){
         </h1>
         
         <Image src={'/under_construction.jpg'} alt='under construction' 
-        width={800}
-        height={800}
+        width={1600}
+        height={1600}
         className="w-full h-full object cover"/>
        </div>
     );
