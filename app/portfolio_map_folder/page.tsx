@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function under_construction(){
     return (
-        <div className="bg-white/75 shadow-lg h-200 w-100 flex items-center justify-center">
-        <h1 className="absolute inset-0 text-4xl font-extrabold text-white animate-pulse">
+        <div>
+        <h1 className="bg-white/75 shadow-lg h-200 w-100 flex items-center justify-center absolute inset-0 text-4xl font-extrabold text-white animate-pulse">
             Sorry this part isn't done yet
         </h1>
         
